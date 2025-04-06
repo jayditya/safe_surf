@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Safe Surf",
+  "version": "1.0",
+  "description": "Detects malicious websites and warns users.",
+  "permissions": ["tabs", "storage", "webNavigation"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["signup.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

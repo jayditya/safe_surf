@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  background: radial-gradient(circle, #001f3f, #000);
+  color: #0ff;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.warning-container {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #0ff;
+  text-align: center;
+  animation: flicker 1.5s infinite alternate;
+  max-width: 400px;
+}
+
+@keyframes flicker {
+  0% {
+    box-shadow: 0 0 20px #0ff;
+  }
+  100% {
+    box-shadow: 0 0 30px #00f, 0 0 40px #0ff;
+  }
+}
+
+h1 {
+  color: red;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px red;
+}
+
+p {
+  margin-bottom: 30px;
+  font-size: 1em;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+button {
+  background: linear-gradient(45deg, #0ff, #00f);
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  animation: neonGlow 1s infinite alternate;
+  border-radius: 5px;
+  width: 45%;
+}
+
+@keyframes neonGlow {
+  0% {
+    box-shadow: 0 0 10px #0ff;
+  }
+  100% {
+    box-shadow: 0 0 20px #0ff, 0 0 30px #00f;
+  }
+}
+
+button:hover {
+  background: #00cccc;
+  transform: scale(1.05);
+}
+
+.glitch {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0ff;
+  text-shadow: 2px 2px #00f;
+  animation: glitchEffect 0.8s infinite alternate;
+  margin-bottom: 10px;
+}
+
+@keyframes glitchEffect {
+  0% {
+    text-shadow: 2px 2px #00f;
+  }
+  100% {
+    text-shadow: -2px -2px #0ff;
+  }
+}

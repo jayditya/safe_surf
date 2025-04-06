@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  background: radial-gradient(circle, #001f3f, #000);
+  color: #0ff;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+  overflow-x: hidden;
+}
+
+.dashboard-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 20px #0ff;
+  padding: 30px;
+  animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+  0% {
+    box-shadow: 0 0 20px #0ff;
+  }
+  100% {
+    box-shadow: 0 0 30px #00f, 0 0 40px #0ff;
+  }
+}
+
+h1 {
+  text-align: center;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff;
+  margin-bottom: 30px;
+}
+
+.stats-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.stats-column {
+  flex: 1;
+  min-width: 280px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #0ff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px #00cccc;
+}
+
+.stats-column h2 {
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  color: #00e6e6;
+  text-shadow: 0 0 8px #0ff;
+  border-bottom: 1px solid #0ff;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+li {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #0ff;
+  padding: 8px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 0.95em;
+  color: #0ff;
+  box-shadow: 0 0 5px #00cccc;
+}

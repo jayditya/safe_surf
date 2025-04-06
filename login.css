@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  background: radial-gradient(circle, #001f3f, #000);
+  color: #0ff;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.login-container {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #0ff;
+  text-align: center;
+  position: relative;
+  animation: flicker 1.5s infinite alternate;
+  width: 300px;
+}
+
+@keyframes flicker {
+  0% {
+    box-shadow: 0 0 20px #0ff;
+  }
+  100% {
+    box-shadow: 0 0 30px #00f, 0 0 40px #0ff;
+  }
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #0ff;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #0ff;
+  background: transparent;
+  color: #0ff;
+  font-size: 16px;
+  text-align: center;
+  outline: none;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+input:focus {
+  box-shadow: 0 0 10px #0ff;
+}
+
+button {
+  background: linear-gradient(45deg, #0ff, #00f);
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  animation: neonGlow 1s infinite alternate;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #00cccc;
+  transform: scale(1.05);
+}
+
+@keyframes neonGlow {
+  0% {
+    box-shadow: 0 0 10px #0ff;
+  }
+  100% {
+    box-shadow: 0 0 20px #0ff, 0 0 30px #00f;
+  }
+}
+
+.glitch {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0ff;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-shadow: 2px 2px #00f;
+  animation: glitchEffect 0.8s infinite alternate;
+}
+
+@keyframes glitchEffect {
+  0% {
+    text-shadow: 2px 2px #00f;
+  }
+  100% {
+    text-shadow: -2px -2px #0ff;
+  }
+}
+
+a {
+  color: #0ff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #00cccc;
+}

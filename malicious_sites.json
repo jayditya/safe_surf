@@ -1,0 +1,7 @@
+{
+  "malicious_domains": [
+    "examplebadsite.com",
+    "phishingsite.net",
+    "malwarezone.org"
+  ]
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Safe Surf</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <h1>Welcome to Safe Surf Dashboard</h1>
+    <p>Below is your malicious site visit history categorized by time:</p>
+
+    <div class="dashboard-grid">
+      <div class="dashboard-card">
+        <h2>Today</h2>
+        <ul id="day-list">
+          <!-- List items will be injected by JavaScript -->
+        </ul>
+      </div>
+      <div class="dashboard-card">
+        <h2>This Week</h2>
+        <ul id="week-list">
+          <!-- List items will be injected by JavaScript -->
+        </ul>
+      </div>
+      <div class="dashboard-card">
+        <h2>This Month</h2>
+        <ul id="month-list">
+          <!-- List items will be injected by JavaScript -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="dashboard.js" defer></script>
+</body>
+</html>
